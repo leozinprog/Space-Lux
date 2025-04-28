@@ -1,0 +1,136 @@
+.pagina-cadastro {
+  font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+    background: linear-gradient(to right, #0c0b0c, #8b0333);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .form-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease;
+  }
+  
+  .form-container:hover {
+    transform: scale(1.02);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #9e063e;
+    margin-bottom: 1.5rem;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #e91e63;
+    outline: none;
+    box-shadow: 0 0 5px rgba(233, 30, 99, 0.4);
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #9e063e;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #01060c;
+    transform: scale(1.02);
+  }
+  
+  .login-link {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  .login-link a {
+    color: #9e063e;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .login-link a:hover {
+    color: #c2185b;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 480px){}
+    .form-container {
+      padding: 1.5rem;
+      border-radius: 12px;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+    input
+    button {
+      font-size: 0.95rem;
+      padding: 10px;
+    }
+
+    button:hover {
+      background-color: #010804;
+    }
+    
+    .input-wrapper {
+        position: relative;
+        width: 85%;
+        margin: 10px 0;
+      }
+      
+      .input-wrapper i {
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        transform: translateY(-50%);
+        color: black;
+        font-size: 1rem;
+      }
+      
+      .input-wrapper input {
+        width: 100%;
+        padding: 12px 12px 12px 40px; /* espaço para o ícone */
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 1rem;
+      }      

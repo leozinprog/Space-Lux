@@ -1,0 +1,81 @@
+.pagina-login {
+  font-family: 'Segoe UI', sans-serif;
+  background-size: cover;
+  background-position: center;
+  background: linear-gradient(to right, #0c0b0c, #8b0333);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 300px;
+}
+
+.form-container:hover {
+  transform: scale(1.03);
+}
+
+h2 {
+  text-align: center;
+  color: #8b0333;
+  margin-bottom: 20px;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 85%;
+  margin: 10px 0;
+}
+
+.input-wrapper i {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 1rem;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #8b0333;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #010703;
+  transform: scale(1.02);
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+}
+.login-link a {
+  color: #8b0333;
+  text-decoration: none;
+}

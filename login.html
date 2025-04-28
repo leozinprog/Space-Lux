@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Space Lux</title>
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="pagina-login" background="img/fundo.jpg">
+  <div class="form-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <!-- E-mail -->
+      <div class="input-wrapper">
+        <i class="fas fa-envelope"></i>
+        <input type="email" id="email" placeholder="E-mail" required>
+      </div>
+
+      <!-- Senha -->
+      <div class="input-wrapper">
+        <i class="fas fa-lock"></i>
+        <input type="password" id="senha" placeholder="Senha" required>
+      </div>
+
+      <button type="submit">Entrar</button>
+    </form>
+    <div class="login-link">
+      Ainda não tem uma conta? <a href="cadastro.html">Cadastre-se</a>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const email = document.getElementById("email").value;
+      const senha = document.getElementById("senha").value;
+
+      const user = JSON.parse(localStorage.getItem("user"));
+
+      if (user && user.email === email && user.senha === senha) {
+        alert("Login realizado com sucesso!");
+        // Redirecionar para página principal, se houver
+        window.location.href = "home.html";
+      } else {
+        alert("E-mail ou senha incorretos.");
+      }
+    });
+  </script>
+</body>
+</html>

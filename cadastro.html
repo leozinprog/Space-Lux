@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Space Lux</title>
+  <link rel="stylesheet" href="css/cadastro.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="pagina-cadastro">
+  <div class="form-container">
+    <h2>Cadastro</h2>
+    <form id="cadastroForm">
+        <!-- Nome -->
+        <div class="input-wrapper">
+          <i class="fas fa-user"></i>
+          <input type="text" id="nome" placeholder="Nome completo" required>
+        </div>
+      
+        <!-- E-mail -->
+        <div class="input-wrapper">
+          <i class="fas fa-envelope"></i>
+          <input type="email" id="email" placeholder="E-mail" required>
+        </div>
+      
+        <!-- Senha -->
+        <div class="input-wrapper">
+          <i class="fas fa-lock"></i>
+          <input type="password" id="senha" placeholder="Senha" required>
+        </div>
+      
+        <button type="submit">Cadastrar</button>
+      </form>
+
+      
+    </form>
+    <div class="login-link">
+      Já tem uma conta? <a href="login.html">Entrar</a>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("cadastroForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const nome = document.getElementById("nome").value;
+      const email = document.getElementById("email").value;
+      const senha = document.getElementById("senha").value;
+
+      localStorage.setItem("user", JSON.stringify({ nome, email, senha }));
+
+      alert("Cadastro realizado com sucesso!");
+      window.location.href = "login.html";
+    });
+  </script>
+</body>
+</html>

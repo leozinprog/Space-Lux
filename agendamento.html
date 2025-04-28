@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agendamento - Salão de Beleza</title>
+  <link rel="stylesheet" href="css/agendamento.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Agende seu horário</h1>
+    <form id="form-agendamento">
+      <input type="text" id="nome" placeholder="Seu nome" required>
+      <input type="date" id="data" required>
+      <input type="time" id="hora" required>
+      <select id="servico" required>
+        <option value="" disabled selected>Escolha um serviço</option>
+        <option value="Corte">Corte</option>
+        <option value="Manicure">Manicure</option>
+        <option value="Maquiagem">Maquiagem</option>
+        <option value="Sobrancelha">Sobrancelha</option>
+      </select>
+      <button type="submit">
+        <i class="fab fa-whatsapp"></i> Agendar agora
+      </button>
+    </form>
+    <a href="home.html" class="voltar">
+      <i class="fas fa-arrow-left"></i> Voltar
+    </a>
+  </div>
+
+  <script>
+    document.getElementById('form-agendamento').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const nome = document.getElementById('nome').value;
+      const data = document.getElementById('data').value;
+      const hora = document.getElementById('hora').value;
+      const servico = document.getElementById('servico').value;
+
+      const mensagem = `Olá! Meu nome é ${nome}. Gostaria de agendar um horário para ${servico} no dia ${data} às ${hora}.`;
+      const telefone = '5544988246427'; 
+      const linkWhatsApp = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
+
+      window.location.href = linkWhatsApp;
+    });
+  </script>
+</body>
+</html>
