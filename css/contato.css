@@ -70,7 +70,7 @@
     border-radius: 50px;
     font-size: 1rem;
     cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
+    transition:0.3s, transform 0.2s;
   }
   
   button:hover {
@@ -112,6 +112,5 @@
   
     .mapa, .contato-info {
       height: auto;
-    }
-  }
-  
+       }
+    }   

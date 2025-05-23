@@ -284,53 +284,70 @@ nav a:hover, nav a:focus {
 
 /* Sobre Seleção */
 .sobre {
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    background: linear-gradient(to right, #0c0b0c, #8b0333);
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: linear-gradient(to right, #0c0b0c, #8b0333);
+  border-radius: 12px;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Remove flex para texto */
+  display: block; 
 }
+
 .sobre-header {
-    text-align: start;
-    
-}
-@media (max-width: 576px){
-    .sobre-header {
-        text-align: center;
-        background: linear-gradient(to right, #0c0b0c, #8b0333);
-    }
-}
-.sobre-header h1 {
-    font-weight: 700;
-    font-size: 3.2rem;
-    color: #fcfdfd;
-}
-.sobre-header p{
-    background: linear-gradient(to right, #0c0b0c, #8b0333);
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.sobre-content p{
-    color: white;
-}
-
-.sobre-justificado{
-    text-align: justify;
-}
-
-
-
-/* Footer */
-footer {
-    padding: 30px;
+@media (max-width: 576px) {
+  .sobre-header {
     text-align: center;
-    background: linear-gradient(to right, #0c0b0c, #8b0333);
-    margin-top: 20px;
+  }
 }
-footer h3 > span,
-footer h3 > a{
-    color: rgb(252, 250, 250);
-    text-decoration: none;
-    font-weight: 500;
-    margin: 0;
-    padding: auto;
+
+.sobre-header h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #f5f5f5;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
 }
+
+.sobre-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: justify;
+  margin-bottom: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+
+
+
+
+.footer {
+  background: linear-gradient(to right, #0c0b0c, #8b0333);
+  color: #eee;
+  text-align: center;
+  padding: 15px 10px;
+  position: relative; /* ou fixed para fixar na tela */
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  font-size: 14px;
+  border-top: 1px solid #ffffff;
+}
+
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
 

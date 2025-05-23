@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<?php
+include("conexao.php");
+include("verificalogin.php");
+include('head.php');
+?>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Agendamento - Salão de Beleza</title>
   <link rel="stylesheet" href="css/agendamento.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <div class="container">
@@ -25,7 +24,7 @@
         <i class="fab fa-whatsapp"></i> Agendar agora
       </button>
     </form>
-    <a href="home.html" class="voltar">
+    <a href="home.php" class="voltar">
       <i class="fas fa-arrow-left"></i> Voltar
     </a>
   </div>

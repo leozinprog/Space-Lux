@@ -1,3 +1,6 @@
+<?php
+include("conexao.php");
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -5,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Lux</title>
     <link rel="stylesheet" href="css/styles.css">
-    <a href="./Login/login.html"></a>
     <style>
         #home {
             background: url('img/fundo.jpg') no-repeat center center fixed;
@@ -16,7 +18,6 @@
         }
     </style>
 </head>
-
 <body>
     <header class="header">
         <div class="container container-nav">
@@ -25,14 +26,13 @@
                 <p class="subtile">Preparando seu Cabelo</p>
             </div>
             <nav>
-
                 <ul>
-                 <li><a href="login.html"class="button btn-hire">Login</a></li>
+                    <li><a href="login.php" class="button btn-hire">Login</a></li>
                 </ul>
-
             </nav>
         </div>
     </header>
+
     <main>
         <div id="home">
             <div class="overlay">
@@ -40,9 +40,10 @@
                     <h3>Preparando seu Cabelo</h3>
                     <h1>Space Lux</h1>
                     <hr id="hr-main">
-                    <a href="cadastro.html"></a>
+                    <a href="cadastro.php" class="button btn-hire">Cadastre-se</a>
                 </div>
             </div>
         </div>
-    
+    </main>
+</body>
 </html>

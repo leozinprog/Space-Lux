@@ -1,0 +1,7 @@
+USE spacelux;
+
+CREATE TABLE IF NOT EXISTS galeria (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    imagem VARCHAR(255) NOT NULL,
+    descricao VARCHAR(255)
+);
