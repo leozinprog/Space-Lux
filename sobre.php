@@ -1,35 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space Lux</title>
-    <link rel="stylesheet" href="css/styles.css">
-
-</head>
+<?php
+include("conexao.php");
+include('head.php');
+?>
 
 <body>
-    <header class="header">
-        <div class="container container-nav">
-            <div class="site-title">
-                <h1>Space Lux</h1>
-                <p class="subtile">Preparando seu Cabelo</p>
-            </div>
-            <nav>
-
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="equipe.html">Equipe</a></li>
-                    <li><a href="sobre.html" class="current-page">Sobre</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="agendamento.html">Agenda</a></li>
-                </ul>
-
-            </nav>
-        </div>
-    </header>
+    <?php include('header.php'); ?>
     <main class="sobre">
         <div class="sobre-header">
             <h1>Sobre nós</h1>
@@ -41,12 +16,12 @@
                 únicas em cuidado pessoal e estética. Localizado em um espaço elegante e bem estruturado, o salão se
                 destaca por unir sofisticação, conforto e atendimento de excelência. Cada detalhe é pensado para que os
                 clientes se sintam valorizados e bem cuidados, desde a recepção até os serviços finais.
-                <br>
+                <br><br>
                 Com uma equipe altamente qualificada e em constante atualização, o Space Lux oferece uma ampla variedade
                 de serviços, como cortes, coloração, hidratação, escovas, manicure, pedicure, design de sobrancelhas e
                 tratamentos faciais. A utilização de produtos de alta qualidade e técnicas modernas garante resultados
                 que encantam, respeitando sempre a individualidade e o estilo de cada cliente
-                <br>
+                <br><br>
                 Mais do que um salão, o Space Lux é um espaço onde beleza e bem-estar caminham juntos. A missão é
                 proporcionar momentos de autocuidado e elevação da autoestima, promovendo não apenas transformações
                 visuais, mas também experiências que inspiram confiança e alegria. A cada visita, o cliente vive um
@@ -54,11 +29,5 @@
             </p>
         </div>
     </main>
-
-    <footer class="footer">
-        <h3><span id="demo">&copy;</span><a href="a">SpaceLuxDeise.com</a></h3>
-    </footer>
-
 </body>
-
 </html>

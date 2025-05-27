@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #0c0b0c, #8b0333);
+}
+
+/* Título da seção */
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+/* Container dos cards */
+.equipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+/* Card do membro */
+.card {
+    background-color: white;
+    width: 250px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Foto do membro */
+.card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #8b0333;
+    margin-bottom: 15px;
+}
+
+/* Nome do membro */
+.card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 10px 0 5px;
+    color: #0c0b0c;
+}
+
+/* Cargo */
+.card p {
+    font-size: 0.95rem;
+    color: #8b0333;
+    font-weight: 600;
+}
+
+/* Botão cadastrar novo membro */
+.btn-novo-membro {
+    text-align: right;
+    margin: 20px 100px 10px 0;
+}
+
+.botao-cadastrar {
+    background-color: #ffffff;
+    color: #8b0333;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.botao-cadastrar:hover {
+    background-color: #c9005e;
+    color: white;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+
+    .btn-novo-membro {
+        text-align: center;
+        margin: 20px auto;
+    }
+}

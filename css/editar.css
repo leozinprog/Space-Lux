@@ -1,0 +1,64 @@
+/* css/editar.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0c0b0c, #8b0333);
+    color: #333;
+    margin: 0%;
+    padding: 0%;
+}
+
+h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #8b0333;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #8b0333;
+}
+
+img {
+    margin-top: 10px;
+    border-radius: 4px;
+    max-width: 150px;
+    height: auto;
+    display: block;
+}

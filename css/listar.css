@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #0c0b0c, #8b0333);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead {
+    background: linear-gradient(to right, #0c0b0c, #8b0333);
+    color: white;
+    font-size: 1.1rem;
+}
+
+thead th {
+    padding: 15px;
+    text-align: left;
+}
+
+tbody td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border: 2px solid #8b0333;
+}
+
+td a {
+    padding: 6px 12px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background 0.3s, color 0.3s;
+    margin-right: 5px;
+}
+
+td a[href*="editar"] {
+    background-color: #0670fa;
+    color: white;
+}
+
+td a[href*="editar"]:hover {
+    background-color: #0056c0;
+}
+
+td a[href*="excluir"] {
+    background-color: #d62828;
+    color: white;
+}
+
+td a[href*="excluir"]:hover {
+    background-color: #a11e1e;
+}
+
+@media (max-width: 768px) {
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody tr {
+        margin-bottom: 15px;
+        background-color: white;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    tbody td {
+        padding: 10px;
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    tbody td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #8b0333;
+        margin-right: 10px;
+    }
+}
+
+.btn-novo-membro {
+    text-align: right;
+    margin: 20px 100px 10px 0;
+}
+
+.botao-cadastrar {
+    background-color: #ffffff;
+    color: #8b0333;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.botao-cadastrar:hover {
+    background-color: #c9005e;
+    transition: 0.5s;
+    
+}

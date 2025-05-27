@@ -1,4 +1,4 @@
-.pagina-login {
+.pagina-Admin {
   font-family: 'Segoe UI', sans-serif;
   background-size: cover;
   background-position: center;
@@ -70,12 +70,12 @@ button:hover {
   transform: scale(1.02);
 }
 
-.login-link {
+.Admin-link {
   text-align: center;
   margin-top: 16px;
   font-size: 14px;
 }
-.login-link a {
+.Admin-link a {
   color: #8b0333;
   text-decoration: none;
 }

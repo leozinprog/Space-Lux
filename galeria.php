@@ -1,34 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space Lux</title>
-    <link rel="stylesheet" href="css/styles.css">
-    
-</head>
+<?php
+include("conexao.php");
+include('head.php');
+?>
 
 <body>
-    <header class="header">
-        <div class="container container-nav">
-            <div class="site-title">
-                <h1>Space Lux</h1>
-                <p class="subtile">Preparando seu Cabelo</p>
-            </div>
-            <nav>
-
-                <ul>
-                 <li><a href="home.html">Home</a></li>
-                 <li><a href="galeria.html"class="current-page">Galeria</a></li>
-                 <li><a href="equipe.html">Equipe</a></li>
-                 <li><a href="sobre.html">Sobre</a></li>
-                 <li><a href="contato.html">Contato</a></li>
-                 <li><a href="agendamento.html">Agenda</a></li>
-                </ul>
-
-            </nav>
-        </div>
-    </header>
+    <?php include('header.php'); ?>
     <main>
         <div class="galeria-header">
             <h1>Alguns dos seus cortes de cabelo mais incríveis</h1>
@@ -64,6 +40,5 @@
     <footer class="footer">
         <h3><span id="demo">&copy;</span><a href="a">SpaceLuxDeise.com</a></h3>
     </footer>
-    
 </body>
 </html>

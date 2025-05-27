@@ -1,3 +1,7 @@
+<?php
+include("conexao.php");
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -33,24 +37,40 @@
 
       
     </form>
-    <div class="login-link">
-      Já tem uma conta? <a href="login.html">Entrar</a>
-    </div>
   </div>
-
-  <script>
-    document.getElementById("cadastroForm").addEventListener("submit", function(e) {
-      e.preventDefault();
-
-      const nome = document.getElementById("nome").value;
-      const email = document.getElementById("email").value;
-      const senha = document.getElementById("senha").value;
-
-      localStorage.setItem("user", JSON.stringify({ nome, email, senha }));
-
-      alert("Cadastro realizado com sucesso!");
-      window.location.href = "login.html";
-    });
-  </script>
 </body>
 </html>
+
+<script>
+  document.getElementById("cadastroForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const nome = document.getElementById("nome").value;
+    const email = document.getElementById("email").value;
+    const senha = document.getElementById("senha").value;
+
+    fetch("ajcadastro.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: `nome=${encodeURIComponent(nome)}&email=${encodeURIComponent(email)}&senha=${encodeURIComponent(senha)}`
+    })
+    .then(response => response.text())
+    .then(data => {
+      if (data === "sucesso") {
+        alert("Cadastro realizado com sucesso!");
+        window.location.href = "admin.php";
+      } else if (data === "erro") {
+        alert("Erro ao cadastrar. Tente novamente.");
+      } else {
+        alert(data);
+      }
+    })
+    .catch(error => {
+      alert("Erro de conexão com o servidor.");
+      console.error(error);
+    });
+  });
+</script>
+
