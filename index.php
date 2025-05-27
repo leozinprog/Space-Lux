@@ -1,7 +1,5 @@
 <?php
 include("conexao.php");
-include("head.php");
-include("header.php");
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -28,7 +26,6 @@ include("header.php");
                     <h3>Preparando seu Cabelo</h3>
                     <h1>Space Lux</h1>
                     <hr id="hr-main">
-                    
                 </div>
             </div>
         </div>

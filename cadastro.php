@@ -60,7 +60,6 @@ include("conexao.php");
     .then(data => {
       if (data === "sucesso") {
         alert("Cadastro realizado com sucesso!");
-        window.location.href = "admin.php";
       } else if (data === "erro") {
         alert("Erro ao cadastrar. Tente novamente.");
       } else {
