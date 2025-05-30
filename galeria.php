@@ -37,8 +37,7 @@ include('head.php');
             </div>
         </div>
     </main>
-    <footer class="footer">
-        <h3><span id="demo">&copy;</span><a href="a">SpaceLuxDeise.com</a></h3>
-    </footer>
+
 </body>
+
 </html>

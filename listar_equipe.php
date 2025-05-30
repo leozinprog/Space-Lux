@@ -15,10 +15,15 @@ include("header.php");
 </head>
 
 <body>
+    
     <h2>Equipe Cadastrada</h2>
+    <div class="top-bar">
+        <a href="painelgerencial.php" class="btn-voltar">Voltar</a>
+    </div>
     <div class="btn-novo-membro">
         <a href="cadastro_equipe.php" class="botao-cadastrar">+ Cadastrar</a>
     </div>
+    
     <table border="1" cellpadding="10">
         <thead>
             <tr>
@@ -41,6 +46,7 @@ include("header.php");
                     echo "<td>" . htmlspecialchars($linha['cargo']) . "</td>";
                     echo "<td>
                   <a href='editar_equipe.php?id={$linha['id']}'>Editar</a> |
+                  <a href='visualizar_equipe.php?id={$linha['id']}'>Visualizar</a> |
                   <a href='excluir_equipe.php?id={$linha['id']}' onclick='return confirm(\"Tem certeza que deseja excluir?\")'>Excluir</a>
                 </td>";
                     echo "</tr>";

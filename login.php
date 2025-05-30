@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body class="pagina-login" background="img/fundo.jpg">
-  <div class="form-container">
+  <class="form-container">
     <h2>Login</h2>
     <?php if (isset($erro)) : ?>
       <div style="color: red; margin-bottom: 15px;"><?= htmlspecialchars($erro) ?></div>
@@ -56,12 +56,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <i class="fas fa-lock"></i>
         <input type="password" name="senha" placeholder="Senha" required />
       </div>
-
+     <div>
       <button type="submit">Entrar</button>
     </form>
-    <div class="login-link">
-      Ainda não tem uma conta? <a href="cadastro.php">Cadastre-se</a>
     </div>
-  </div>
 </body>
 </html>

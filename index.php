@@ -1,12 +1,9 @@
 <?php
 include("conexao.php");
+include('head.php');
 ?>
-<!DOCTYPE html>
-<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space Lux</title>
     <link rel="stylesheet" href="css/styles.css">
     <style>
         #home {
@@ -16,9 +13,12 @@ include("conexao.php");
             width: 100%;
             background-size: cover;
         }
+        
     </style>
 </head>
+
 <body>
+    <?php include('header.php'); ?>
     <main>
         <div id="home">
             <div class="overlay">

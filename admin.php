@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['user_email'] = $user['email'];
 
             // Redireciona para a home
-            header("Location: cadastro_equipe.php");
+            header("Location: painelgerencial.php");
             exit;
         } else {
             $erro = "Senha incorreta.";
@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <link rel="stylesheet" href="css/login.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
-<body class="pagina-login" background="img/fundo.jpg">
+<body class="pagina-Admin">
   <div class="form-container">
     <h2>Login</h2>
     <?php if (isset($erro)) : ?>
@@ -59,9 +59,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
       <button type="submit">Entrar</button>
     </form>
-    <div class="login-link">
-      Ainda não tem uma conta? <a href="cadastro.php">Cadastre-se</a>
-    </div>
   </div>
 </body>
 </html>

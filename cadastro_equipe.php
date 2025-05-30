@@ -1,8 +1,8 @@
 <?php
 include("conexao.php");
-include("verificalogin.php");
-include("head.php");
 include("header.php");
+include("head.php");
+include("verificalogin.php");
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +39,9 @@ include("header.php");
       <button type="submit">Cadastrar</button>
     </form>
 
-    <li><a href="logout.php">Sair</a></li>
+    <a href="listar_equipe.php" class="voltar">
+      <i class="fas fa-arrow-left"></i> Voltar
+    </a>
   </div>
 </body>
 </html>

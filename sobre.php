@@ -1,31 +1,39 @@
 <?php
 include("conexao.php");
 include('head.php');
+include('header.php');
 ?>
 
 <body>
-    <?php include('header.php'); ?>
+    <link rel="stylesheet" href="css/sobre.css">
     <main class="sobre">
         <div class="sobre-header">
-            <h1>Sobre nós</h1>
+            <h1>História</h1>
         </div>
         <div class="sobre-content">
             <p class="sobre-justificado">
-            
-                O salão de beleza Space Lux é um ambiente moderno e acolhedor, idealizado para oferecer experiências
-                únicas em cuidado pessoal e estética. Localizado em um espaço elegante e bem estruturado, o salão se
-                destaca por unir sofisticação, conforto e atendimento de excelência. Cada detalhe é pensado para que os
-                clientes se sintam valorizados e bem cuidados, desde a recepção até os serviços finais.
+                A ideia para o desenvolvimento do site do salão de beleza Space Lux surgiu a partir de uma conversa
+                casual entre duas amigas. Em uma tarde de sábado, Deise, uma jovem empreendedora e proprietária de um
+                pequeno salão de beleza recém-inaugurado no centro da cidade, desabafava sobre as dificuldades que
+                enfrentava para organizar sua agenda de atendimentos. Muitas clientes agendavam por mensagens de texto
+                ou ligações, o que gerava confusão, horários sobrepostos e até mesmo faltas por esquecimento.
                 <br><br>
-                Com uma equipe altamente qualificada e em constante atualização, o Space Lux oferece uma ampla variedade
-                de serviços, como cortes, coloração, hidratação, escovas, manicure, pedicure, design de sobrancelhas e
-                tratamentos faciais. A utilização de produtos de alta qualidade e técnicas modernas garante resultados
-                que encantam, respeitando sempre a individualidade e o estilo de cada cliente
+                Ao ouvir sua frustração, seu filho, estudante de desenvolvimento web e apaixonado por design, enxergou
+                ali uma oportunidade de aplicar seus conhecimentos em um projeto real. Nascia, assim, a proposta de
+                criar um site personalizado para o Space Lux, com o objetivo de otimizar o agendamento de serviços,
+                facilitar a comunicação com os clientes e dar maior visibilidade ao salão.
                 <br><br>
-                Mais do que um salão, o Space Lux é um espaço onde beleza e bem-estar caminham juntos. A missão é
-                proporcionar momentos de autocuidado e elevação da autoestima, promovendo não apenas transformações
-                visuais, mas também experiências que inspiram confiança e alegria. A cada visita, o cliente vive um
-                verdadeiro momento de luxo e cuidado personalizado.
+                A ideia foi imediatamente aceita por Deise, que viu no projeto a chance de modernizar seu negócio e
+                atrair novos públicos. O site incluiria páginas como home, sobre o salão, serviços oferecidos, equipe de
+                profissionais, galeria de fotos, agendamento online e contato. Além disso, um painel administrativo
+                permitiria a Deise gerenciar os horários, adicionar fotos de novos trabalhos realizados e manter as
+                informações sempre atualizadas.
+                <br><br>
+                Mais do que apenas um projeto acadêmico, o desenvolvimento do site do Space Lux se transformou em uma
+                experiência prática de empreendedorismo digital, com impacto direto no crescimento de um pequeno negócio
+                local. A história fictícia de Deise e seu salão representa a realidade de muitos profissionais da beleza
+                que buscam, através da tecnologia, alcançar mais organização, profissionalismo e sucesso em suas
+                carreiras.
             </p>
         </div>
     </main>
