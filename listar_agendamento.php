@@ -22,7 +22,7 @@ include("header.php");
             <?php
             $resultado = $conexao->query("SELECT * FROM agendamentos ORDER BY data, hora");
             while ($row = $resultado->fetch_assoc()):
-            ?>
+                ?>
                 <tr>
                     <td><?= htmlspecialchars($row['nome']) ?></td>
                     <td><?= date("d/m/Y", strtotime($row['data'])) ?></td>

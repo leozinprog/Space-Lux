@@ -13,7 +13,6 @@ include('head.php');
             width: 100%;
             background-size: cover;
         }
-        
     </style>
 </head>
 
@@ -31,4 +30,5 @@ include('head.php');
         </div>
     </main>
 </body>
+
 </html>

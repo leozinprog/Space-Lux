@@ -26,7 +26,12 @@ include("header.php");
                 <p>Visualize e administre os horários</p>
             </a>
 
-            <a href="galeria_admin.php" class="card">
+            <a href="listar_sobre.php" class="card">
+                <h2>História</h2>
+                <p>Gerencie a histórias do seu salão</p>
+            </a>
+
+            <a href="admin_galeria.php" class="card">
                 <h2>Galeria</h2>
                 <p>Atualize as fotos do portfólio</p>
             </a>

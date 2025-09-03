@@ -1,4 +1,4 @@
--- Criação da tabela para armazenar imagens da galeria
+
 CREATE TABLE galeria (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome_imagem VARCHAR(255) NOT NULL,

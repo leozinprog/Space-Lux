@@ -1,4 +1,4 @@
-/* Painel Gerencial */
+
 
 body {
     margin: 0;
@@ -59,7 +59,7 @@ main.painel {
     border-color: #ffffff40;
 }
 
-/* Responsivo */
+
 @media (max-width: 768px) {
     .painel-cards {
         flex-direction: column;

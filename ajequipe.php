@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $caminhoFinal = $pasta . $nomeFoto;
 
     if (move_uploaded_file($foto['tmp_name'], $caminhoFinal)) {
-      // Insere no banco
+      
       $sql = "INSERT INTO equipe (nome, cargo, foto) VALUES (?, ?, ?)";
       $stmt = $conexao->prepare($sql);
       $stmt->bind_param("sss", $nome, $cargo, $nomeFoto);

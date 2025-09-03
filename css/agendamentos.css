@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #000000, #3a001e);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container-agendamento {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #2b0014; /* fundo vinho escuro */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    border: 1px solid #880e4f; /* detalhe vinho */
+}
+
+.container-agendamento h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.form-agendamento {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-agendamento label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #f5f5f5;
+}
+
+.form-agendamento input,
+.form-agendamento select,
+.form-agendamento textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #880e
+}

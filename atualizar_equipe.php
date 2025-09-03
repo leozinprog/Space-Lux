@@ -16,13 +16,13 @@ if (isset($_FILES['foto']) && $_FILES['foto']['error'] == 0) {
   $caminho = $pasta . $nomeFoto;
 
   if (move_uploaded_file($foto['tmp_name'], $caminho)) {
-    // Atualiza com nova foto
+    
     $sql = "UPDATE equipe SET nome=?, cargo=?, foto=? WHERE id=?";
     $stmt = $conexao->prepare($sql);
     $stmt->bind_param("sssi", $nome, $cargo, $nomeFoto, $id);
   }
 } else {
-  // Atualiza sem alterar a foto
+  
   $sql = "UPDATE equipe SET nome=?, cargo=? WHERE id=?";
   $stmt = $conexao->prepare($sql);
   $stmt->bind_param("ssi", $nome, $cargo, $id);

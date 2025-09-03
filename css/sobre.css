@@ -1,4 +1,4 @@
-/* Aplica-se apenas à página de História */
+
 body {
     margin: 0;
     padding: 0;
@@ -8,14 +8,14 @@ body {
     min-height: 100vh;
 }
 
-/* Área principal */
+
 main.sobre {
     padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Cabeçalho da página */
+
 .sobre-header h1 {
     text-align: center;
     font-size: 3rem;
@@ -25,7 +25,7 @@ main.sobre {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
-/* Parágrafo justificado */
+
 .sobre-content .sobre-justificado {
     font-size: 1.15rem;
     line-height: 1.9;
@@ -33,7 +33,7 @@ main.sobre {
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
 }
 
-/* Responsivo para telas menores */
+
 @media (max-width: 768px) {
     .sobre-header h1 {
         font-size: 2.2rem;
