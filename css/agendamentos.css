@@ -1,16 +1,16 @@
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #000000, #3a001e);
-    color: #fff;
     margin: 0;
     padding: 0;
+    font-family: "Playfair Display", serif;
+    background: linear-gradient(to right, #0c0b0c, #8b0333);
+    overflow: hidden;
 }
 
 .container-agendamento {
     max-width: 600px;
     margin: 40px auto;
     background: #2b0014; /* fundo vinho escuro */
-    padding: 30px;
+    padding: 10px;
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
     border: 1px solid #880e4f; /* detalhe vinho */
@@ -40,5 +40,26 @@ body {
 .form-agendamento textarea {
     padding: 10px;
     border-radius: 8px;
-    border: 1px solid #880e
+    border: 1px solid #8b0333
+}
+.form-agendamento button {
+    background: linear-gradient(to right, #fcfbfb, #8b0333);
+    color: #111;  /* texto escuro p/ contraste */
+    font-weight: 600;
+    font-size: 16px;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 180px; /* espaço entre ícone e texto */
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+.form-agendamento button:hover {
+    color: #0e0a0a;
+    transform: scale(1.02);
+    
 }

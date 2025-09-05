@@ -1,12 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Playfair Display", serif;
     background: linear-gradient(to right, #0c0b0c, #8b0333);
 }
 
 .pagina-cadastro {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Playfair Display", serif;
     
     justify-content: center;
     align-items: center;

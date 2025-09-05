@@ -1,6 +1,6 @@
 body {
     background: linear-gradient(to right, #200015, #660033);
-    font-family: 'Poppins', sans-serif;
+    font-family: "Playfair Display", serif;
     margin: 0;
     padding: 0;
     color: #fff;
@@ -39,32 +39,117 @@ input[type="file"] {
     font-family: inherit;
 }
 
+/* ===== Botões com Animação ===== */
 button {
     display: block;
     width: 100%;
     padding: 12px;
-    background-color: #fff;
-    color: #a0003c;
+    background: linear-gradient(45deg, #fff, #ffe6f0);
+    color: #a3043b;
     font-weight: bold;
     border: none;
     border-radius: 25px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
     font-size: 16px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
 }
 
+/* Efeito hover suave */
 button:hover {
-    background-color: #ffe6f0;
+    background: linear-gradient(45deg, #ffe6f0, #fff);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(163, 4, 59, 0.4);
 }
 
+/* Efeito ao clicar */
+button:active {
+    transform: scale(0.97);
+}
+
+/* Efeito de brilho que percorre */
+button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.4);
+    transform: skewX(-20deg);
+    transition: 0.5s;
+}
+
+button:hover::after {
+    left: 100%;
+}
+
+/* ===== Link Voltar ===== */
 a.voltar {
     display: inline-block;
     margin-top: 20px;
     color: #ccc;
     text-decoration: none;
     font-size: 14px;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 a.voltar:hover {
+    color: #fff;
     text-decoration: underline;
+    transform: translateX(-3px);
+}
+
+/* ===== Galeria ===== */
+.galeria-lista {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.item {
+    background-color: rgba(255,255,255,0.05);
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
+.item img.thumb {
+    max-width: 100%;
+    max-height: 150px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.edit-form input[type="file"] {
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+/* Botão de exclusão animado */
+.btn-delete {
+    background:  #a3043b;
+    color: #fff;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-delete:hover {
+    background: #a3043b;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(163, 4, 59, 0.5);
+}
+
+.btn-delete:active {
+    transform: scale(0.95);
 }

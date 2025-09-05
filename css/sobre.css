@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', sans-serif;
+    
     background: linear-gradient(to right, #0c0b0c, #8b0333);
     color: #f5f5f5;
     min-height: 100vh;
@@ -23,6 +23,7 @@ main.sobre {
     color: #ffffff;
     margin-bottom: 40px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    
 }
 
 

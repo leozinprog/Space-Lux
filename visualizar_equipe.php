@@ -1,7 +1,7 @@
 <?php
 include("conexao.php");
 include("head.php");
-include("header.php");
+
 ?>
 
 <link rel="stylesheet" href="css/visualizar.css">
@@ -10,7 +10,7 @@ include("header.php");
     <div class="top-bar">
         <a href="listar_equipe.php" class="btn-voltar">← Voltar</a>
     </div>
-    <h1>Conheça Nossa Equipe</h1>
+    <h1>Nossa Equipe</h1>
     <div class="equipe-container">
         <?php
         $sql = "SELECT * FROM equipe ORDER BY id DESC";

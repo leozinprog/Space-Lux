@@ -1,43 +1,34 @@
 <?php
-include("conexao.php");
+include('conexao.php');
 include('head.php');
+include('header.php');
 ?>
+<link rel="stylesheet" href="css/galeria.css">
 
-<body>
-    <?php include('header.php'); ?>
-    <main>
-        <div class="galeria-header">
-            <h1>Alguns dos seus cortes de cabelo mais incríveis</h1>
-            <p>Espero que você volte logo</p>
-        </div>
-        <div class="row galeria-row">
-            <div class="column">
-                <img src="img/1.jpg" alt="" style="width: 100%">
-                <img src="img/2.jpg" alt="" style="width: 100%">
-                <img src="img/3.jpg" alt="" style="width: 100%">
-                <img src="img/4.jpg" alt="" style="width: 100%">
-            </div>
-            <div class="column">
-                <img src="img/5.jpg" alt="" style="width: 100%">
-                <img src="img/6.jpg" alt="" style="width: 100%">
-                <img src="img/7.jpg" alt="" style="width: 100%">
-                <img src="img/8.jpg" alt="" style="width: 100%">
-            </div>
-            <div class="column">
-                <img src="img/9.jpg" alt="" style="width: 100%">
-                <img src="img/10.jpg" alt="" style="width: 100%">
-                <img src="img/11.jpg" alt="" style="width: 100%">
-                <img src="img/12.jpg" alt="" style="width: 100%">
-            </div>
-            <div class="column">
-                <img src="img/13.jpg" alt="" style="width: 100%">
-                <img src="img/14.jpg" alt="" style="width: 100%">
-                <img src="img/16.jpg" alt="" style="width: 100%">
-                <img src="img/18.jpg" alt="" style="width: 100%">
-            </div>
-        </div>
-    </main>
+<div class="container-galeria">
+    <h2>Alguns dos seus cortes de cabelo mais incríveis</h2>
 
-</body>
+    <div class="galeria-grid">
+        <?php
+        // Busque apenas campos que existem
+        $sql = "SELECT id, imagem FROM galeria ORDER BY id DESC";
+        $resultado = $conexao->query($sql);
 
-</html>
+        if ($resultado && $resultado->num_rows > 0) {
+            while ($row = $resultado->fetch_assoc()) {
+                $img = htmlspecialchars($row['imagem'] ?? '');
+                if ($img === '') continue;
+
+                echo '
+                <div class="galeria-card">
+                    <div class="foto-wrap">
+                        <img src="uploads/'.$img.'" alt="Foto '.$row['id'].'">
+                    </div>
+                </div>';
+            }
+        } else {
+            echo '<p class="empty">Nenhuma imagem encontrada.</p>';
+        }
+        ?>
+    </div>
+</div>

@@ -5,9 +5,10 @@
   }
   
   body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: "Playfair Display", serif;
     background: linear-gradient(to right, #0c0b0c, #8b0333);
     color: #fdfafa;
+    overflow: hidden;
   }
   
   .contato-section {
@@ -19,8 +20,8 @@
   
   .mapa {
     flex: 1;
-    min-width: 300px;
-    height: 400px;
+    min-width: 100px;
+    height: 300px;
     animation: slideLeft 1s ease forwards;
   }
   
@@ -42,6 +43,7 @@
   .contato-info h2 {
     color: #fcfafa;
     margin-bottom: 1rem;
+    font-family: "Playfair Display", serif;
   }
   
   .contato-info p {

@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+    background: linear-gradient(to right, #0c0b0c, #8b0333);
+}
+
+
+/* Container e título */
+.container-galeria{
+  text-align:center;
+  padding:40px 20px;
+}
+.container-galeria h2{
+  color:#fff;
+  font-size:32px;
+  margin:0 0 24px;
+  font-weight:700;
+}
+
+/* Grid responsivo */
+.galeria-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(260px, 1fr));
+  gap:28px;
+  justify-items:center;
+}
+
+/* Card no estilo da equipe */
+.galeria-card{
+  background:#fff;
+  border-radius:16px;
+  padding:22px;
+  width:260px;               /* largura fixa p/ padronizar */
+  box-shadow:0 6px 18px rgba(0,0,0,.18);
+  transition:transform .2s ease-in-out;
+}
+.galeria-card:hover{ transform:scale(1.03); }
+
+/* Foto circular com borda */
+.foto-wrap{
+  width:220px;
+  height:350px;
+  border-radius:12px;
+  overflow:hidden;
+  margin:0 auto;
+  border:4px solid #b30059;  /* mesma cor de destaque da equipe */
+}
+.foto-wrap img{
+  width:100%;
+  height:100%;
+  object-fit:cover;          /* corta sem distorcer */
+  object-position:center;
+}
+
+/* Mensagem vazia */
+.empty{ color:#fff; opacity:.85; }
+
+@media (max-width:480px){
+  .galeria-card{ width:220px; }
+  .foto-wrap{ width:200px; height:200px; }
+}

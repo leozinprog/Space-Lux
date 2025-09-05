@@ -1,7 +1,7 @@
 <?php
 include("conexao.php");
 include("head.php");
-include("header.php");
+
 ?>
 <link rel="stylesheet" href="css/listar_agendamento.css">
 

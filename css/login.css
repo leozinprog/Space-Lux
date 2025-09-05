@@ -1,5 +1,5 @@
 .pagina-Admin {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Playfair Display", serif;
   background-size: cover;
   background-position: center;
   background: linear-gradient(to right, #0c0b0c, #8b0333);
@@ -17,16 +17,19 @@
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   width: 300px;
+  font-family: "Playfair Display", serif;
 }
 
 .form-container:hover {
   transform: scale(1.03);
+  font-family: "Playfair Display", serif;
 }
 
 h2 {
   text-align: center;
   color: #8b0333;
   margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
 }
 
 .input-wrapper {
@@ -63,6 +66,7 @@ button {
   cursor: pointer;
   margin-top: 10px;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: "Playfair Display", serif;
 }
 
 button:hover {

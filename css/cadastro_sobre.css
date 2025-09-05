@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 
 body {
     background: linear-gradient(to right, #0c0b0c, #8b0333);
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Playfair Display", serif;
     color: #fff;
     margin: 0;
     padding: 0;
@@ -37,7 +38,7 @@ body {
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Playfair Display", serif;
 }
 
 .container-sobre button {

@@ -1,6 +1,5 @@
 <?php
 include("conexao.php");
-include("header.php");
 include("head.php");
 include("verificalogin.php");
 ?>

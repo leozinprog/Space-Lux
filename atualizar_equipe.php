@@ -2,7 +2,7 @@
 include("conexao.php");
 include("verificalogin.php");
 include("head.php");
-include("header.php");
+
 
 $id = intval($_POST['id']);
 $nome = $_POST['nome'];

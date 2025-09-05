@@ -2,7 +2,7 @@
 include("conexao.php");
 include("verificalogin.php");
 include("head.php");
-include("header.php");
+
 
 if (!isset($_GET['id'])) {
   die("ID não fornecido.");

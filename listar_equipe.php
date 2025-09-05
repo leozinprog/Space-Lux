@@ -2,7 +2,6 @@
 include("conexao.php");
 include("verificalogin.php");
 include("head.php");
-include("header.php");
 ?>
 
 <!DOCTYPE html>
@@ -17,8 +16,9 @@ include("header.php");
 <body>
 
     <h2>Equipe Cadastrada</h2>
+    
     <div class="top-bar">
-        <a href="painelgerencial.php" class="btn-voltar">Voltar</a>
+        <a href="painelgerencial.php" class="botao-voltar">Voltar</a>
     </div>
     <div class="btn-novo-membro">
         <a href="cadastro_equipe.php" class="botao-cadastrar">+ Cadastrar</a>

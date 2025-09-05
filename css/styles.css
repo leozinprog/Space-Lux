@@ -1,21 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 * {
     box-sizing: border-box;
+    
 }
+h1 .playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: "Playfair Display", serif;
     background-color: #f8f5f5;
     height: 100vh;
 }
 
 .site-title h1 {
     font-weight: 400;
-    font-family: "Lora", sans-serif;
+    font-family: "Playfair Display", serif;
     color: #f1f3f5;
     font-size: 2rem;
     margin: 0%;
@@ -127,18 +135,21 @@ nav a:focus {
 .landing-text h3 {
     font-weight: 700;
     color: rgb(252, 249, 249);
-    font-family: 'Lora', sans-serif;
+    font-family: "Playfair Display", serif;
 }
 
-.landing-text h1 {
+    .landing-text h1 {
     font-size: 450%;
-    font-weight: 700;
+    font-weight: 400;   /* use 400 p/ ficar mais fino */
     color: white;
-    font-family: "Lora", sans-serif;
+    font-family: "Playfair Display", serif;
     padding-bottom: 0;
     margin: 0 0;
-
+    letter-spacing: 2px;
 }
+
+
+
 
 @media (max-width: 600px) {
     .landing-text h1 {
